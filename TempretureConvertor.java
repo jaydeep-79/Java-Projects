@@ -9,11 +9,12 @@ import java.text.DecimalFormat;
    { 
     
     Scanner in = new Scanner(System.in);
-    
+    // To take Input From the User
     System.out.println("Enter C for Celcius ");
     System.out.println("Enter F for Farenhite ");
     
     char degree = in.next().charAt(0);
+    // Filetering Out the First Charactor 
     
     if (degree == 'c' || degree == 'C') {
       System.out.println("Enter Celcius: ");
@@ -21,7 +22,7 @@ import java.text.DecimalFormat;
       {
         System.out.println("Farenhite: " + Math.round(c * 9/5 + 32));
       }
-    }
+    } // If the user inputs C or c that means he wants to convert celsius to  Fahrenheit
     
     if (degree == 'f' || degree == 'F') {
       System.out.println("Enter Farenhite: ");
@@ -29,7 +30,7 @@ import java.text.DecimalFormat;
       {
         System.out.println("Celcius: " + Math.round(f - 32) * 5/9);
       }
-    }
+    } // if the user inputs f or F he wants to convert  Fahrenheit to Celsius 
   
    }
  }
