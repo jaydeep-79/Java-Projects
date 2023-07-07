@@ -10,6 +10,7 @@ public class MixPrograms {
         System.out.println("B -> Basic calculator");
         System.out.println("P -> Number Printer");
         System.out.println("A -> Age calculator");
+        System.out.println("S -> Bill splitter");
 
         char select = in.next().toUpperCase().charAt(0);
 
@@ -85,6 +86,20 @@ public class MixPrograms {
                 for (int i = 0; i < num; i++){
                     System.out.println(i);
                 }
+                break;
+
+            case 'S';
+
+                System.out.println("Enter the bill amount: ");
+                int amount = in.nextInt();
+                
+                System.out.println("No. of person: ");
+                int person = in.nextInt();
+
+                int spilt = amount/person;
+
+                System.out.println("Split: " + Math.round(spilt));
+
                 break;
 
             case 'A':
